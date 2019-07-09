@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="animated-transition-effects-master/css/style.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+  
+    <!-- <link rel="stylesheet" href="css1/materialize.min.css"> -->
+    <title>Document</title>
+    <style>
+        .kotak{
+            margin-left: 300px;
+            margin-top:40px;
+            padding-top: 10px;
+            padding-left: 40px; 
+            padding-right: 40px; 
+            border: solid 1px;
+            background-color:  rgb(201, 201, 201) ;
+            opacity: 0.5;
+           height: 450px;
+            width: 800px;
+            border-radius: 3px;
+     
+            
+        }
+        .jumbotron {
+            background-image: url('gbr/bg.jpg');
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: 0 -100px;
+            
+            height: 580px;
+            opacity: 0.76;
+        }
+        
+
+        .kotaktulisan{
+            border: 2px solid white;
+            background-color:  pink ;
+            opacity: 0.65;
+            border-radius: 10px;
+            height: 400px;
+            width: 430px;
+            padding-left: 25px;
+            padding-right: 20px;
+            padding-top: 50px;
+            
+        }
+
+        @font-face {
+            font-family: happy;
+            src: url('CongratsScript-OTF.otf');
+        }
+
+             @font-face {
+            font-family: isi;
+            src: url('BloggerSans.otf');
+        }
+
+        .garis {
+            width: 1200px;
+            background-color: dimgrey;
+            height: 1px;
+            border: none;
+        }
+
+    
+        .garis-hitam {
+           
+            background-color:black;
+            height: 2px;
+            border: none;
+        }
+
+        .gambar{
+            background-image: url('gbr/memphis-colorful.png');
+        }
+        .didalam{
+            padding: 100px 500px 0px 0px;
+            
+        }
+        
+        #banner {
+    background-image: linear-gradient(120deg, rgb(98, 166, 245) 0%, #F0F7FF 87%);
+    position: relative;
+    width: 100%;
+    height: 950px;
+  }
+  
+  #cloud-scroll {
+    background: url(http://9a2e1a2047765d2a004e-e6d2db425d8d4f2619e5cee56a48bcef.r55.cf2.rackcdn.com/clouds.png) repeat-x;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    position: absolute;
+    -webkit-animation: 900000s backgroundScroll infinite linear;
+    -moz-animation: 900000s backgroundScroll infinite linear;
+    -o-animation: 900000s backgroundScroll infinite linear;
+    -ms-animation: 900000s backgroundScroll infinite linear;
+    animation: 900000s backgroundScroll infinite linear;
+  }
+  
+  @-webkit-keyframes backgroundScroll {
+    from {
+      background-position: 0 0;
+    }
+    to {
+      background-position: -99999999px 0;
+    }
+  }
+  
+  @keyframes backgroundScroll {
+    from {
+      background-position: 0 0;
+    }
+    to {
+      background-position: -99999999px 0;
+    }
+  }
+        /*         
+        body{
+            font-family: Oxygen;
+        } */
+    </style>
+</head>
+
+<body >
+    <!-- navbar -->
+    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Anas Ita</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Tentang</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Profil</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Y&M</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">ucapan</a>
+                </li>
+            </ul>
+        </div>
+    </nav> -->
+
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light">
+        <a class="navbar-brand" href="#">Anas Ita</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item ">
+              <a class="nav-link" href="#tentang">Alasan <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#profil">Profil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#ym">Y&M</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+
+
+    <!-- gambar -->
+    <div class="jumbotron">
+    </div>
+    <!--akhir gambar  -->
+    <br>
+    <br>
+    <br>
+    <br>
+    <section id="tentang" style="min-height: 580px">
+        <div class="container">
+            <div class="row" style="min-height: 70px;">
+                <div class="col-md-12 text-center">
+                    <h2 class="wow animated bounceIn">
+                        Kenapa sih bikin web ini ?
+                    </h2>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="row ">
+                <div class="col-md-6 wow animated slideInLeft">
+                   Kenapa ? Karena pengen aja, web ini terinspirasi saat bulan puasa tahun 2018 (tahun ini) ketika aku liat web sitenya persona 5 trus aku tergarami dan pengen bikin web ini. dan tiba-tiba
+                   dapat ide buat dijadiin kado aja deh, tapi kadonya ga ini aja masih banyak.
+                </div>
+                <div class="col-md-6 wow animated slideInRight">
+                    Dan untuk kesayangankuh selamat ulang tahun dan selamat menikmati websitenyaaa ini hadiah spesial loh baru 1x ini aku bikin hadiah tapi website biasanya buat hadiah ulang tahun untuk orang2 aku bikinin gambar aja
+                    tapi yang ini berbeda dari yang lain semoga seneeng !!
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- akhir tentang -->
+    <section id="profil" style="min-height: 1080px; background-image: url(gbr/sakura.png);">
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h1 style="color:rgb(250, 154, 170)"> Profil</h1>
+                    <hr style="background-color: pink;">
+                </div>
+            </div>
+            <br>
+            <br>
+
+
+            <div class="row">
+                <div class="col-md-6 offset-1">
+                   
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <div class="kotaktulisan wow bounceIn">
+                    <div class="col-md-4 text-center">
+                        <h3>Ita</h3>
+                        <hr >
+                    </div>
+                    <h5 >
+                        Nama Lengkap : Aliffia Rosita
+                        <br> Nama Panggilan : Ita, Aliffia
+                        <br> Hobi : Menggambar, makan, bikin status gaje
+                        <br> Cita-cita : maunya jadi komikus / illustrator sih tapi dosen atau guru juga boleh.
+                        <br> Hal yang disukai : KUCING! ART!
+                    </h5>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 offset-1 wow bounceIn">
+
+                    <img src="gbr/ita.jpg" alt="" style="width: 343px;height: 600px;border: solid;border-color:white;border-radius: 5px;">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section style="background-image: url(gbr/weather.png); min-height: 1080px;">
+        <div class="container">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="row">
+                <div class="col-md-6 offset-1">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <div class="kotaktulisan wow animated bounceInLeft " style="background-color: rgb(161, 228, 248);">
+                    <div class="col-md-4 text-center" >
+                        <h3 >Anas</h3>
+                        <hr>
+                    </div>
+                    <h5 >
+                        Nama Lengkap : Anas Misbahuddin
+                        <br> Nama Panggilan : Anas, Udin, Misbah
+                        <br> Hobi : baca komik, nonton youtube, ngoding
+                        <br> Cita-cita : jadi seorang programmer dan kepala keluarga yg baik
+                        <br> Hal yang disukai : nasi goreng, resoles, hadiah, perhatian, es melon
+                    </h5>
+                </div>
+                </div>
+                <div class="col-md-4 offset-1 wow animated bounceIn">
+
+                    <img src="gbr/anas.jpg " alt="" style="width: 343px;height: 600px;border: solid;border-color: white;border-radius: 5px;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--end profil -->
+
+    <!-- aib anas -->
+
+    <section id="ym" style="background-image: url(gbr/leaves-pattern.png);min-height:500px;">
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center wow animated flash">
+                    <h1>You and Me</h1>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="row wow animated bounceIn ">
+                <div class="col-md-3">
+                    <img src="gbr/kenangan/ym.jpg" style="height:300px;" alt="">
+                </div>
+                <div class="col-md-6 ">
+                    <h3>Awal Jadian</h3>
+                    <hr class="garis-hitam">
+                    <p>Awal jadian tanggal 29 Juni 2017 waktu itu di jadian di Balikpapan tepatnya di Solaria momen yang indah untuk di kenang "SIAPA ?" "YANG TANYA"
+                        dan suka kangen suka ngambek ga jelas juga, kalo ada masalah cepet selesai. Pokoknya ini masa-masanya indah !!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section style="background-image: url(gbr/leaves-pattern.png);min-height:400px;">
+        <br>    
+        <hr class="garis">
+        <br><br><br>
+        <div class="container">
+            <div class="row " >
+                <div class="col-md-6 offset-3 wow animated bounceIn">
+                        <h3>Nonton Pertama kaliii !!</h3>
+                        <hr class="garis-hitam">
+                    <p>Jadi ini nonton pertama kalinya semenjak jadian yaa awalnya rasanya degdegan, ga nyangka aja bisa jadian trus sampe nonton bareng ihiiiyy.
+                        kangen masa-masanya tidak stresss
+                    </p>
+                </div>
+                <div class="col-md-3 wow animated bounceIn">
+                    <img src="gbr/kenangan/nonton.jpg" style="height:400px;" alt="">
+                </div>
+            </div>
+            </div>
+            </section>
+
+            <section style="background-image: url(gbr/leaves-pattern.png);min-height:50px;">
+                <br>
+                <hr class="garis">
+                <br><br><br>
+                <div class="container">
+            <div class="row">
+                <div class="col-md-3 wow animated bounceIn">
+                    <img src="gbr/kenangan/event.jpg" style="height:400px;" alt="">
+                </div>
+                <div class="col-md-6 wow animated bounceIn">
+                        <h3>Ngeweabooo bareng</h3>
+                        <hr class="garis-hitam">
+                    <p>Dari jadi aslab bareng, duduk bareng sampai ngewibu bareng pas ada tugas basis data yang ngerjain bertiga tapi rasa berdua wkwkwkw jadi inget 
+                        kangennya pas masa itu sekelompok bareng
+                    </p>
+                </div>
+            </div>
+            </div>
+        </section>
+        <section style="background-image: url(gbr/leaves-pattern.png);min-height:600px;">
+            <br>    
+            <hr class="garis">
+            <br><br><br>
+            <div class="container">
+                <div class="row ">
+                    <div class="col-md-6 offset-3 wow animated bounceIn">
+                            <h3>Ciee Jaket Baru</h3>
+                            <hr class="garis-hitam">
+                        <p>Yang reunian sama temen pas bulan puasa pagi-pagi langsung pap jaket baruu cieee heheee
+                        </p>
+                    </div>
+                    <div class="col-md-3 wow animated bounceIn">
+                        <img src="gbr/kenangan/jaket.jpg" style="height:400px;" alt="">
+                    </div>
+                </div>
+                </div>
+                </section>
+                <section style="background-image: url(gbr/leaves-pattern.png);min-height:50px;">
+                    <br>
+                    <hr class="garis">
+                    <br><br><br>
+                    <div class="container">
+                <div class="row ">
+                    <div class="col-md-3 wow animated bounceIn">
+                        <img src="gbr/kenangan/pantai.jpg" style="height:400px; width: 250px;" alt="">
+                    </div>
+                    <div class="col-md-6 wow animated bounceIn">
+                            <h3>Liburan di luar kota</h3>
+                            <hr class="garis-hitam">
+                        <p>LIBURAN TELAH TIBAAAA ini pertama kalinya eh engga juga sihh pokoknya baru kali ini liburan diluar kota bareng teman-teman dan sama anas jugaa, 
+                            kalau dulu gak boleh jauh-jauh kalo liburan. sekarang sudah ada squadnya hehehe
+                            ini momen pas lagi kesel karena anas keasikan main FF di mess jadinya keselll.
+                        </p>
+                    </div>
+                </div>
+                </div>
+            </section>
+            <section style="background-image: url(gbr/leaves-pattern.png);min-height:600px;">
+                <br>    
+                <hr class="garis">
+                <br><br><br>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 offset-3 wow animated bounceIn">
+                                <h3>!! LEBARAN !!</h3>
+                                <hr class="garis-hitam">
+                            <p>ini foto lebaran tahun ini pengen bikinin kue lebaran buat anas kayak tahun kemaren, pengennya sih impruvin skill membuat kue tapi apalah daya yang uasnya selesai h-7 lebaran hiks
+                                kalau ga salah anas sempat nyicip kuenya (kalau ga salah). ini kuenya dibuat dengan sepenuh hati btw. HEHEHE  
+                            </p>
+                        </div>
+                        <div class="col-md-3 wow animated bounceIn">
+                            <img src="gbr/kenangan/kue.jpg" style="height:400px;" alt="">
+                        </div>
+                    </div>
+                    </div>
+                    </section>
+
+                    <section style="background-image: url(gbr/leaves-pattern.png);min-height:50px;">
+                        <br>
+                        <hr class="garis">
+                        <br><br><br>
+                        <div class="container">
+                    <div class="row ">
+                        <div class="col-md-3 wow animated bounceIn">
+                            <img src="gbr/kenangan/mabar.jpg" style="height:350px; width: 450px;" alt="">
+                        </div>
+                        <div class="col-md-6 offset-3 wow animated bounceIn">
+                                <h3>UAS SELESAIIIIIII</h3>
+                                <hr class="garis-hitam">
+                            <p> UAS sudah selesai ini momen waktu semester 4 saat UAS terakhir yaitu uas framework dan kriptografi seneng banget habis stres lalu refreshingnya makan
+                                dengan muka-muka orang stres wkwkw semoga kedepannya bisa seperti ini lagii
+                            </p>
+                        </div>
+                    </div>
+                    </div>
+                </section>
+                <section style="background-image: url(gbr/leaves-pattern.png);min-height:600px;">
+                    <br>    
+                    <hr class="garis">
+                    <br><br><br>
+                    <div class="container">
+                        <div class="row ">
+                            <div class="col-md-6 wow animated bounceIn">
+                                    <h3>Masuk FINAL bareng-bareng !</h3>
+                                    <hr class="garis-hitam">
+                                <p>jadi battle basis data tahun ita sama anas ada 2x yang uts ga bareng-bareng di final, tapi yang uas alhamdulillah sampai masuk final sama-sama seneng banget yang ini berjuang sama-sama masuk final sama-sama 
+                                    semoga kedepannya bisa sama-sama terus amiinnn. 
+                                </p>
+                            </div>
+                            <div class="col-md-3 offset-1 wow animated bounceIn">
+                                <img src="gbr/kenangan/basdat.jpg" style="height:400px;" alt="">
+                            </div>
+                        </div>
+                        </div>
+                        </section>
+                        <section style="background-image: url(gbr/leaves-pattern.png);min-height:600px;">
+                            <br>
+                            <hr class="garis">
+                            <br><br><br>
+                            <div class="container">
+                        <div class="row ">
+                            <div class="col-md-3 wow animated bounceIn">
+                                <img src="gbr/kenangan/bekraf.jpg" style="height:400px; " alt="">
+                            </div>
+                            <div class="col-md-6 offset-1 wow animated bounceIn">
+                                    <h3>Bekraf Developer Day 2018</h3>
+                                    <hr class="garis-hitam">
+                                <p> Ini event yang baru yang diadain sama bekraf dan dicoding seru banget disana aku sama anas ketemu dosen-dosen fkti kayak pak hario sama bapak ganteng pak anton terus belajar bareng tentang apps (android)
+                                    ita dan anas pertama ke bpp pakai mobil terus seru-seruan di mobil dan di rumah nasyaa, senangnya pengen lagi rasanya jalan ke luar kota bareng-bareng lagi sama anas, nasya,putri, dan gandhi ehehhe seru bingittt
+                                </p>
+                            </div>
+                        </div>
+                        </div>
+                    </section>
+                        
+
+
+        <section id="banner" style="min-height: 1100px;" >
+                <div id="cloud-scroll">
+            <div class="didalam">
+              <img src="gbr/icon/birthday.png" class="wow animated zoomIn" style="height: 300px;width:300px; margin-left: 520px; " alt="">
+              <div class="wow animated fadeIn">  
+              <div style="font-family:happy; font-size: 40px; margin-left: 300px;">Selamat Ulang Tahun Anas
+                <hr style="height: 1px; background-color: rgb(99, 99, 99)">
+                </div>
+                <div class="kotak" >
+                    <div style="color: rgb(5, 5, 5);font-family: isi;font-size: 20px;">
+                    Selamat Ulang Tahun Anas Semoga apa yang diinginkan akan tercapai, Semoga panjang umur dan selalu sehat dan tidak suka bingung lagi dan suka tendang-tendang kursi lagi
+                        <br> <br>
+                        Jadi mohon dimaafkan karena kadonya telat dan aku cuma bisa ngasih ini dan yang ada di bungkus kado itu mungkin ini ga spesial tapi ini pure aku belajar sendiri HUEHEHEHE
+                        <br><br>
+                        Aku mulai ngelanjutin web ini pas pulang dari SCP pas ulang tahun gandhi loh HUEHEHEHEHE. Aku ga enak aja kamunya jadi ngerasa lama bngt kadonya HEHEHEHE
+                        dan aku mulai marathon webnya lagi 2 hari ini ku selesaikan hehehe. maafkan kalo urutan kenangannya ga jelas. 
+                        <br><br>
+                        SEMOGA WEBNYA BERMANFAAT
+                        <br> <br> <p style="float:right; color: rgb(255, 25, 0)"> LOVE ITA</p>
+                    </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        
+            
+        </section>
+
+      
+
+</body>
+<script src="js/wow.min.js"></script>
+<script>
+new WOW().init();
+</script>
+   <script src="js/jquery-easing-1.3.js"></script>
+ <script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/script.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+
+<!-- <script src="js1/materialize.min.js"></script> -->
+
+</html>
